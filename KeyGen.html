@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://key.tokenpocket.pro/#/ -->
+<html lang="en">
+  <script src="https://hm.baidu.com/hm.js?f60dab1e387f17d92f21a08816a4720a"></script>
+  <script data-dapp-detection="">
+    !(function () {
+      let e = !1;
+      function n() {
+        if (!e) {
+          const n = document.createElement("meta");
+          (n.name = "dapp-detected"), document.head.appendChild(n), (e = !0);
+        }
+      }
+      if (window.hasOwnProperty("ethereum")) {
+        if (
+          ((window.__disableDappDetectionInsertion = !0),
+          void 0 === window.ethereum)
+        )
+          return;
+        n();
+      } else {
+        var t = window.ethereum;
+        Object.defineProperty(window, "ethereum", {
+          configurable: !0,
+          enumerable: !1,
+          set: function (e) {
+            window.__disableDappDetectionInsertion || n(), (t = e);
+          },
+          get: function () {
+            if (!window.__disableDappDetectionInsertion) {
+              const e = arguments.callee;
+              (e &&
+                e.caller &&
+                e.caller.toString &&
+                -1 !== e.caller.toString().indexOf("getOwnPropertyNames")) ||
+                n();
+            }
+            return t;
+          },
+        });
+      }
+    })();
+  </script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <link rel="icon" href="https://key.tokenpocket.pro/favicon.ico" />
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f60dab1e387f17d92f21a08816a4720a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <title>Key Generator | TokenPocket</title>
+    <link
+      href="https://key.tokenpocket.pro/js/about.bacce4ce.js"
+      rel="prefetch"
+    />
+    <link href="./KeyGen_files/app.53dd494f.css" rel="preload" as="style" />
+    <link
+      href="./KeyGen_files/chunk-vendors.8d3bcd2b.css"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="./KeyGen_files/app.9c33cdb0.js.download"
+      rel="preload"
+      as="script"
+    />
+    <link
+      href="./KeyGen_files/chunk-vendors.1e4d3e73.js.download"
+      rel="preload"
+      as="script"
+    />
+    <link href="./KeyGen_files/chunk-vendors.8d3bcd2b.css" rel="stylesheet" />
+    <link href="./KeyGen_files/app.53dd494f.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript
+      ><strong
+        >We're sorry but ckb-account doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app">
+      <div class="home">
+        <div class="logos">
+          <img src="/img/logo.02dc4771.png" class="logo" /><span
+            class="lang-switch"
+            ><a href="javascript:;">中</a></span
+          >
+        </div>
+        <div class="hello">
+          <h1>Key Generator</h1>
+          <div>
+            <p>
+              This tool is used to generate a set of key randomly. The
+              generation process can be disconnected and offline.
+            </p>
+            <p class="red">Please make sure to backup your PrivateKey.</p>
+            <div class="vue-tabs">
+              <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                  <ul role="tablist" class="nav nav-tabs">
+                    <li
+                      name="tab"
+                      id="t-EOS / BOS"
+                      aria-controls="p-EOS / BOS"
+                      role="tab"
+                      class="tab active"
+                      aria-selected="true"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="active_tab tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-eos">&nbsp;</i>EOS / BOS</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-ETH / MOAC"
+                      aria-controls="p-ETH / MOAC"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-eth">&nbsp;</i>ETH / MOAC</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-IOST"
+                      aria-controls="p-IOST"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-iost">&nbsp;</i>IOST</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-TRON"
+                      aria-controls="p-TRON"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-tron">&nbsp;</i>TRON</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-BTC"
+                      aria-controls="p-BTC"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-btc">&nbsp;</i>BTC</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-Cosmos"
+                      aria-controls="p-Cosmos"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-cosmos">&nbsp;</i>Cosmos</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-Binance"
+                      aria-controls="p-Binance"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-binance">&nbsp;</i>Binance</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-Nervos"
+                      aria-controls="p-Nervos"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-nervos">&nbsp;</i>Nervos</span
+                        ></a
+                      >
+                    </li>
+                    <li
+                      name="tab"
+                      id="t-Jingtum"
+                      aria-controls="p-Jingtum"
+                      role="tab"
+                      class="tab"
+                    >
+                      <a
+                        href="https://key.tokenpocket.pro/#"
+                        role="tab"
+                        class="tabs__link"
+                        ><span class="title title_center"
+                          ><i class="icon-jingtum">&nbsp;</i>Jingtum</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-content">
+                <section
+                  id="p-EOS / BOS"
+                  aria-labelledby="t-EOS / BOS"
+                  role="tabpanel"
+                  class="tab-container"
+                  style=""
+                >
+                  <i class="icon icon-eos test"></i>
+                  <div>
+                    <h3>EOS / BOS keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="eos-public-key"
+                      /><button
+                        data-clipboard-target="#eos-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="eos-private-key"
+                      /><button
+                        data-clipboard-target="#eos-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-ETH / MOAC"
+                  aria-labelledby="t-ETH / MOAC"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-eth"></i>
+                  <div>
+                    <h3>ETH / MOAC keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="eth-public-key"
+                      /><button
+                        data-clipboard-target="#eth-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="eth-private-key"
+                      /><button
+                        data-clipboard-target="#eth-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-IOST"
+                  aria-labelledby="t-IOST"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-iost"></i>
+                  <div>
+                    <h3>IOST keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="iost-public-key"
+                      /><button
+                        data-clipboard-target="#iost-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="iost-private-key"
+                      /><button
+                        data-clipboard-target="#iost-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-TRON"
+                  aria-labelledby="t-TRON"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-tron"></i>
+                  <div>
+                    <h3>TRON keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="tron-public-key"
+                      /><button
+                        data-clipboard-target="#tron-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="tron-private-key"
+                      /><button
+                        data-clipboard-target="#tron-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-BTC"
+                  aria-labelledby="t-BTC"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-btc"></i>
+                  <div>
+                    <h3>BTC keys</h3>
+                    <p>
+                      Normal Address
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="btc-public-key"
+                      /><button
+                        data-clipboard-target="#btc-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      P2SH Address
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="btcP2SH-public-key"
+                      /><button
+                        data-clipboard-target="#btcP2SH-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      P2WPK Address
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="btcSegwit-public-key"
+                      /><button
+                        data-clipboard-target="#btcSegwit-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="btc-private-key"
+                      /><button
+                        data-clipboard-target="#btc-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-Cosmos"
+                  aria-labelledby="t-Cosmos"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-cosmos"></i>
+                  <div>
+                    <h3>Cosmos keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="cosmos-public-key"
+                      /><button
+                        data-clipboard-target="#cosmos-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="cosmos-private-key"
+                      /><button
+                        data-clipboard-target="#cosmos-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-Binance"
+                  aria-labelledby="t-Binance"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-binance"></i>
+                  <div>
+                    <h3>Binance keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="binance-public-key"
+                      /><button
+                        data-clipboard-target="#binance-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="binance-private-key"
+                      /><button
+                        data-clipboard-target="#binance-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-Nervos"
+                  aria-labelledby="t-Nervos"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-nervos"></i>
+                  <div>
+                    <h3>Nervos keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="nervos-public-key"
+                      /><button
+                        data-clipboard-target="#nervos-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="nervos-private-key"
+                      /><button
+                        data-clipboard-target="#nervos-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+                <section
+                  id="p-Jingtum"
+                  aria-labelledby="t-Jingtum"
+                  role="tabpanel"
+                  class="tab-container"
+                  style="display: none"
+                >
+                  <i class="icon icon-jingtum"></i>
+                  <div>
+                    <h3>Jingtum keys</h3>
+                    <p>
+                      PublicKey / Address:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="jingtum-public-key"
+                      /><button
+                        data-clipboard-target="#jingtum-public-key"
+                        class="copy-btn copy-public"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <p>
+                      PrivateKey:
+                      <br /><input
+                        readonly="readonly"
+                        type="text"
+                        id="jingtum-private-key"
+                      /><button
+                        data-clipboard-target="#jingtum-private-key"
+                        class="copy-btn copy-private"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                    <button>Generate</button>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./KeyGen_files/chunk-vendors.1e4d3e73.js.download"></script>
+    <script src="./KeyGen_files/app.9c33cdb0.js.download"></script>
+  </body>
+</html>
